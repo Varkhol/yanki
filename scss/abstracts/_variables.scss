@@ -1,0 +1,64 @@
+// colors
+// names taken from http://www.color-blindness.com/color-name-hue/
+$black: #000;
+$cerulean: #00629b;
+$charcoal: #424242;
+$citrus: #84bd00;
+$dark-gray: #aaa;
+$dim-gray: #666;
+$gainsboro: #e0e0e0;
+$islamic-green: #019328;
+$night-rider: #333;
+$nobel: #999;
+$rain-forest: #64772d;
+$sangria: #990000;
+$stark-white: #cebdb3;
+$teal: #008578;
+$tutu: #faeded;
+$very-light-gray: #ccc;
+$white-smoke: #efefef;
+$white: #fff;
+$dodger-blue: #0075FF; 
+
+$swatch-types: black #000000, beige #f5f5dc, blue blue, purple purple, red red, brown #783201, green green, grey #8f979d, pink #fe249a, orange orange, white #ffffff, yellow #ffff00, navy navy;
+
+$amazon: #306B50;
+$jet-stream: #B4CCC1;
+$midnight-moss: #1A211E;
+$woodsmoke: #383D3B;
+$nevada: #606664;
+$hit-grey: #9DA3A1;
+$zircon: #DCE0DF;
+$white-smoke02: #F5F5F5;
+$japanese-laurel: #2E7D32;
+$free-speech-red: #D60000;
+$sazerac01: #F5E1CE;
+$sazerac02: #F7E2CD;
+$seashell: #FFF3E7;
+$americano: #857C74;
+$albescent-white: #E5DBD0;
+$rose-white: #FAEDE1;
+$white_op_80: rgba(255, 255, 255, 0.8);
+$white_op_60: rgba(255, 255, 255, 0.6);
+$white_op_30: rgba(255, 255, 255, 0.3);
+$white_op_15: rgba(255, 255, 255, 0.15);
+
+// fonts
+$sans-serif: Arial, sans-serif;
+$sans-serif-alt: Lato, sans-serif;
+$serif: Crete Round, serif;
+$sans-serif-inter: Inter, sans-serif;
+$sans-serif-spectral: Spectral, serif;
+
+// global classes
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
