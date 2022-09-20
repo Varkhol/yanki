@@ -1,0 +1,25 @@
+// global classes
+.visually-hidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+[class*="__wrapper"] {
+    margin: 0 auto;
+    padding: 0 20px;
+
+	@include device(tablet) {
+		max-width: 960px;
+		padding: 0 40px;
+	}
+
+	@include device(desktop) {
+		max-width: 1140px;
+	}
+}

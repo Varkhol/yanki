@@ -1,0 +1,94 @@
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+[class*=__wrapper] {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  [class*=__wrapper] {
+    max-width: 960px;
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1024px) {
+  [class*=__wrapper] {
+    max-width: 1140px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@font-face {
+  font-family: "Raleway Bold";
+  src: url("../../fonts/Raleway Bold.woff2") format("woff2"), url("../../fonts/Raleway Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Raleway ExtraLight";
+  src: url("../../fonts/Raleway ExtraLight.woff2") format("woff2"), url("../../fonts/Raleway ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: "Raleway Light";
+  src: url("../../fonts/Raleway Light.woff2") format("woff2"), url("../../fonts/Raleway Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+}

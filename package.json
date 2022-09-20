@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Varkhol/yanki#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
     "sass": "^1.54.9"
   }
 }

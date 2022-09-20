@@ -12,15 +12,3 @@ $font-bold: 'Raleway Bold', sans-serif;
 $font-extra-light: 'Raleway ExtraLigh', sans-serif;
 $font-light: 'Raleway Light', sans-serif;
 
-// global classes
-.visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	width: 1px;
-}
-
