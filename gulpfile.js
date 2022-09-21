@@ -1,12 +1,13 @@
-const gulp = require('gulp'),
-    sass = require('gulp-sass')(require('sass'));
- 
-gulp.task('scss', function () {
-    return gulp.src('./scss/**/*.scss')
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-        .pipe(gulp.dest('./'));
-});
- 
-gulp.task('default', function () {
-    gulp.watch('./scss/**/*.scss', gulp.series('scss'));
-});
+const { series, parallel } = require("gulp");
+const { styles } = require("./gulp-tasks/styles.js");
+const { serve } = require("./gulp-tasks/serve.js");
+const { watcher } = require("./gulp-tasks/watcher.js");
+const { imgMin } = require("./gulp-tasks/minifyimg.js");
+const { minifyJs } = require("./gulp-tasks/minifyjs.js");
+const { cleaner } = require("./gulp-tasks/dist.cleaner.js");
+const { html } = require("./gulp-tasks/html.js");
+const { copyImages } = require("./gulp-tasks/copyimages.js");
+
+exports.build = series(cleaner, html, imgMin, styles, minifyJs, copyImages);
+
+exports.dev = parallel(serve, watcher);
