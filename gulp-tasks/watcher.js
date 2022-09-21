@@ -14,7 +14,7 @@ const { copyImages } = require("./copyimages.js");
 function watcher() {
   watch("./src/html/**/*.html").on("change", series(html, browserReload));
   watch("./src/js/*.js").on("change", series(minifyJs, browserReload));
-  watch("./src/scss/*.scss").on("change", series(styles, browserReload));
+  watch("./src/scss/**/*.scss").on("change", series(styles, browserReload));
   watch("./src/img/*").on("change", series(copyImages, browserReload));
 }
 
